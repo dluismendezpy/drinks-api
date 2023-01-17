@@ -26,6 +26,7 @@ pickleshare==0.7.5
 platformdirs==2.6.2
 pre-commit==2.21.0
 prompt-toolkit==3.0.36
+psycopg2-binary==2.9.5
 ptyprocess==0.7.0
 pure-eval==0.2.2
 pycodestyle==2.10.0
