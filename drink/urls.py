@@ -1,7 +1,11 @@
 from django.urls import path
+from rest_framework.urlpatterns import format_suffix_patterns
 
-from .views import drink_api_view
+from .views import DrinkAction, DrinkList
 
 urlpatterns = [
-    path("", drink_api_view, name="get_drinks"),
+    path("", DrinkList.as_view(), name="drink_list"),
+    path("<int:pk>/", DrinkAction.as_view(), name="drink_actions"),
 ]
+
+urlpatterns = format_suffix_patterns(urlpatterns, allowed=["json", "html"])
