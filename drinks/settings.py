@@ -42,6 +42,9 @@ INSTALLED_APPS = [
     # My apps
     "core",
     "drink",
+    # Third party
+    "rest_framework",
+    "drf_yasg",
 ]
 
 MIDDLEWARE = [
